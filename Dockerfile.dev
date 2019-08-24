@@ -7,6 +7,8 @@ COPY package.json .
 RUN npm install
 RUN npm install -g @angular/cli@8.2.2
 
+RUN apk add --no-cache nodejs nodejs-npm bash chromium nss chromium-chromedriver
+
 EXPOSE 4200
 
 COPY . .
