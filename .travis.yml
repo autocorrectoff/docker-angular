@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t whiteboii/docker-angular -f Dockerfile.dev .
 
-script: 
-  - docker run whiteboii/docker-angular ng test --watch=false
+# script: 
+#   - docker run whiteboii/docker-angular ng test --watch=false
