@@ -22,3 +22,6 @@ EXPOSE 4200
 COPY . .
 
 CMD ["ng", "serve", "--host", "0.0.0.0", "--disableHostCheck"]
+
+# karma test execution and setup in docker taken from:
+# https://hackernoon.com/running-karma-tests-with-headless-chrome-inside-docker-ae4aceb06ed3
