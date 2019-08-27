@@ -2,9 +2,7 @@ FROM node:12.8.1-alpine as builder
 WORKDIR '/app'
 COPY package.json .
 RUN npm install
-RUN npm install -g @angular/cli@8.2.2
 COPY . .
-RUN ng build --prod
 
 FROM nginx
 EXPOSE 80
